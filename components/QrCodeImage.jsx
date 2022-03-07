@@ -32,17 +32,16 @@ const QrCodeImage = ({ userInput, setuserInput }) => {
    )
 
    return (
-      <Container  css={{margin: 0, padding: 0, marginTop: 15}}>
-         <div ref={ref}>
+      <Container display="flex" direction='column'  css={{margin: 0, padding: 0, marginTop: 15}}>
+         <div className="code" ref={ref}>
             {qrCode}
          </div>
-         <div>
+         <div className="download">
             <Button
                onClick={downloadQRCode}
                size="xl"
-               color="gradient"
                shadow color="gradient"
-               css={{marginTop: 10}}
+               css={{margin: "auto", marginTop: 10}}
             >Download QR COde</Button>
          </div>
       </Container>

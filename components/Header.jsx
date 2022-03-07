@@ -1,30 +1,32 @@
-import { Text } from '@nextui-org/react'
+import {useTheme as useNextTheme} from 'next-themes'
+import { Switch, Text, Container, useTheme } from '@nextui-org/react'
+import { Moon, Sun } from "../public/icons"
+
 
 const Header = () => {
-   return (
-      <header>
-         <Text
-            h1
-            size={70}
-            css={{
-               textGradient: '45deg, $blue500 -20%, $pink500 50%',
-               lineHeight: "4.5rem"
-            }}
-            weight="bold"
-         >Ultimate QR Code  </Text>
-         <Text
-            h1
-            size={70}
-            css={{
-               textGradient: '45deg, $purple500 -20%, $pink500 100%',
-               lineHeight: "4.5rem"
-            }}
-            weight="bold"
-         >
-            Generator
-         </Text>
-      </header>
-   )
+    const { setTheme } = useNextTheme();
+    const { isDark } = useTheme();
+
+    return (
+        <Container as="nav" display='flex' justify='space-between' css={{
+            padding: '1rem 0', margin: '0', position: 'sticky'
+        }}
+        >
+            <Text size="2rem" weight="bold">
+                QR4ALL
+
+            </Text>
+
+            <Switch
+                checked={isDark}
+                onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
+                iconOn={<Sun filled />}
+                iconOff={<Moon filled />}
+                size="xl"
+                shadow color="secondary"
+            />
+        </Container>
+    )
 }
 
 export default Header

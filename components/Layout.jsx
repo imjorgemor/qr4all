@@ -1,33 +1,38 @@
-import { Container, Row, Col } from '@nextui-org/react';
+import { Container, Row, Col, useTheme } from '@nextui-org/react';
 import Head from 'next/head'
-import { useTheme as useNextTheme } from 'next-themes'
-import { Switch, useTheme, Text } from '@nextui-org/react'
+import Header from './Header';
+import Image from 'next/image';
+import background from "../public/img/gradient-left-dark.svg"
 
 
 
 const Layout = ({ children }) => {
-   const { setTheme } = useNextTheme();
-   const { isDark, type } = useTheme();
-   return (
-      <Container lg>
-         <Head>
-            <title>ULTIMATE QR CODE GENERATOR</title>
-            <meta name="description" content="Ultimate QR code Generator" />
-         </Head>
 
-         <Text>
-            the current theme is {type}
-         </Text>
+    const { isDark } = useTheme();
 
-         <Switch
-            checked={isDark}
-            onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
-         />
+    return (
+        <Container sm>
+            <Head>
+                <title>ULTIMATE QR CODE GENERATOR</title>
+                <meta name="description" content="Ultimate QR code Generator" />
+            </Head>
 
-         {children}
+            <div className={isDark && 'cover'}>
+                <Header />
 
-      </Container>
-   )
+                {children}
+            </div>
+
+            <style jsx>{`
+            .cover {
+                background-image: url("/img/gradient-left-dark.svg"), url("/img/gradient-right-dark.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            `}</style>
+        </Container>
+    )
 }
 
 export default Layout

@@ -33,6 +33,7 @@ a {
    font-weight: 600;
    border: none;
    background-color: transparent;
+   text-align: center
 }
 
 .input-form:focus {
@@ -41,4 +42,47 @@ a {
 
 .qrcode {
    margin: 2rem auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    margin: auto;
+}
+
+.qr-wrapper {
+    margin: auto;
+}
+
+.code {
+    margin: auto;
+}
+
+.download {
+    margin: auto;
+
+}
+
+.main-caption {
+    display: none;
+}
+
+@media screen and (min-width:650px) {
+    .main-caption {
+        display: inline;
+    }
+
+}
+
+@media screen and (min-width:960px) {
+    .main {
+        flex-direction: row;
+
+    }
+
 }
