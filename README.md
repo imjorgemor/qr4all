@@ -1,35 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# QR4ALL. NEXT GEN QR GENERATOR
 
-## Getting Started
+![cover](https://github.com/imjorgemor/qr4all/blob/main/public/favicon.ico)
 
-First, run the development server:
+[https://qr4all.vercel.app/](https://qr4all.vercel.app/)
 
+
+* [About The Project](#about)
+* [Built With](#built-with)
+* [Setup](#setup)
+* [Features](#features)
+* [Roadmap](#roadmap)
+* [Contact](#contact)
+* [License](#license)
+
+
+## About
+
+QR free generator single page application
+
+## Built With
+
+This project has built with:
+* [React](https://reactjs.org/)
+* [Nextjs](https://nextjs.org/)
+* [NextUI](https://nextui.org/)
+
+Other libraries and dependencies:
+* React-icons
+* Qrcode.react
+
+
+## Setup
+
+### Installation
+
+Get a local copy up and run these following simple steps:
+
+Install NPM packages
 ```bash
-npm run dev
-# or
-yarn dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Features
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Night Mode
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Responsive mobile-first
+ 
+### QR free generator
 
-## Learn More
+## Roadmap
+Without losing the idea of simplicity while generating the QR code, features like color customs, add logos and personalize the pattern of the QR.
 
-To learn more about Next.js, take a look at the following resources:
+## Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# qrgenerator-app
+* [github](https://github.com/imjorgemor)
+* [linkedin](https://www.linkedin.com/in/jorge-mor-reactdev/)
