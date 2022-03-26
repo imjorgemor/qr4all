@@ -4,11 +4,10 @@ import QrCodeImage from "./QrCodeImage"
 
 const QrGenerator = () => {
 
-    const [userInput, setuserInput] = useState("")
+    const [userInput, setuserInput] = useState("");
 
     return (
         <section className='main'>
-
             <div className="form-wrapper">
                 <Form
                     userInput={userInput}
@@ -16,10 +15,13 @@ const QrGenerator = () => {
                 />
             </div>
             <div className="qr-wrapper">
-                <QrCodeImage
-                    userInput={userInput}
-                    setuserInput={setuserInput}
-                />
+                {(userInput.length > 1)
+                    ? <QrCodeImage
+                        userInput={userInput}
+                        setuserInput={setuserInput}
+                    />
+                    : <div></div>
+                }
             </div>
         </section>
     )

@@ -1,47 +1,53 @@
-*, html,
+
+
+*,
+html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 [class*="global-container"] {
-   padding: 1rem 2rem;
-   max-width: 1000px;
-   margin: 0 auto;
-   height: 100vh;
+    padding: 1rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100vh;
 }
 
-.form{ 
-  margin: 1.5rem 0 0rem;
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0 0rem;
+    gap: 1rem;
 }
 
 .input-form {
-   width: 100%;
-   height: 4rem;
-   font-size: 3rem;
-   font-weight: 600;
-   border: none;
-   background-color: transparent;
-   text-align: center
+    width: 100%;
+    height: 4rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    text-align: center;
 }
 
 .input-form:focus {
-   outline: none;
+    outline: none;
 }
 
 .qrcode {
-   margin: 2rem auto;
+    margin: 2rem auto;
 }
 
 .main {
@@ -65,24 +71,58 @@ a {
 
 .download {
     margin: auto;
-
 }
 
 .main-caption {
     display: none;
 }
 
-@media screen and (min-width:650px) {
+.footer{
+    margin: 7rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-end;
+    gap: 1.5rem
+}
+
+.footer > div:first-child {
+    padding-right: 1rem;
+   border-right: 1px solid white;
+}
+
+.github {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.github:hover{
+    
+    color: #5E1DAD;
+    box-shadow: 0 4px 14px 0 #5E1DAD;
+    border-radius: 50px;
+}
+
+@media screen and (min-width: 650px) {
     .main-caption {
         display: inline;
     }
-
+    .footer{
+        margin: 10rem 0 1rem;
+    }
+    .input-form {
+        font-size: 3rem;
+    }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width: 960px) {
     .main {
         flex-direction: row;
-
     }
-
+    .footer{
+        margin: 5rem 0 1rem;
+    }
+    .form-wrapper {
+        margin: 11.5rem 0;
+    }
 }
