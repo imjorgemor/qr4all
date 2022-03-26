@@ -8,7 +8,7 @@ const Footer = () => {
                 <Text size="1.25rem" weight={'bold'} >For educational purposes</Text>
             </div>
             <div>
-                <a href="https://github.com/imjorgemor/qr4all" target="_blank" >
+                <a href="https://github.com/imjorgemor/qr4all" target="_blank" rel="noreferrer">
                     <FaGithub className="github" />
 
                 </a>
