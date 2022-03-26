@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
         <Container sm>
             <Head>
                 <title>ULTIMATE QR CODE GENERATOR</title>
-                <meta name="description" content="Ultimate QR code Generator" />
+                <meta name="description" content="Ultimate QR code maker - Easy to use, create your QR code free for ever" />
             </Head>
 
             <div className={isDark? 'cover-dark' : 'cover-light'}>
