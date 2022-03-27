@@ -27,7 +27,7 @@ const Form = ({ userInput, setuserInput}) => {
             </form>
             {userInput &&
                 <Button size="lg" shadow color="secondary" auto onClick={handleReset}
-                    css={{ marginLeft: "60%", marginTop:"1rem", fontWeight: "600" }}
+                    css={{ marginLeft: "50%", marginTop:"1rem", fontWeight: "600" }}
                 >Reset QR Code</Button>
             }
         </div>

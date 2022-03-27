@@ -16,10 +16,7 @@ const Header = () => {
             }}
             >
                 <Text
-                    size="2.5rem" weight="bold"
-                    css={{fontFamily: 'Chicle, cursive', letterSpacing: "1px"}}
-                
-                
+                    size="2rem" weight="bold"
                 >
                     QR4ALL
                 </Text>
