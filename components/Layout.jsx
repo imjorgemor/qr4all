@@ -12,6 +12,7 @@ const Layout = ({ children }) => {
             <Head>
                 <title>ULTIMATE QR CODE GENERATOR</title>
                 <meta name="description" content="Ultimate QR code maker - Easy to use, create your QR code free for ever" />
+                <meta property="og:image" content="/favicon.ico"/>
             </Head>
 
             <div className={isDark? 'cover-dark' : 'cover-light'}>
